@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "TwitterIsTwitter",
+    "version": "1.0",
+    "description": "Stop Twitter from redirecting itself to its new website.",
+    "icons": {
+        "48": "icons/twtistwt-48.png"
+    },
+    "background": {
+        "scripts": [
+            "bg.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ]
+}
