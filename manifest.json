@@ -12,9 +12,20 @@
         ],
         "persistent": true
     },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://x.com/*"
+            ],
+            "js": [
+                "warn.js"
+            ]
+        }
+    ],
     "permissions": [
         "webRequest",
         "webRequestBlocking",
+        "cookies",
         "<all_urls>"
     ]
 }
